@@ -1,4 +1,4 @@
-import Image from 'next/image'
+//import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 
 interface ResultsPageProps {
@@ -19,7 +19,7 @@ export default function ResultsPage({ formData }: ResultsPageProps) {
     <div className="max-w-4xl mx-auto p-8 space-y-12">
       {/* Cover Page */}
       <section className="text-center space-y-4">
-        <h1 className="text-4xl font-bold">{formData.fullName}'s Wedding Theme Guideline</h1>
+        <h1 className="text-4xl font-bold">{formData.fullName}&apos;s Wedding Theme Guideline</h1>
         <p className="text-xl">Generated on {currentDate}</p>
         <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
           <p>Elegant design incorporating chosen color palette</p>
@@ -36,7 +36,7 @@ export default function ResultsPage({ formData }: ResultsPageProps) {
       {/* Wedding Overview */}
       <section>
         <h2 className="text-2xl font-semibold mb-4">Wedding Overview</h2>
-        <p>Brief summary of the couple's vision: [Placeholder for vision summary]</p>
+        <p>Brief summary of the couple&apos;s vision: [Placeholder for vision summary]</p>
         <p>Key elements of chosen aesthetic: {formData.aesthetic.join(', ')}</p>
       </section>
 
